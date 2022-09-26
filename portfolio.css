@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&family=Noto+Serif:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Istok Web', sans-serif;
+    font-family: 'Noto Serif', serif;
+    color: #E1FFEE !important;
+}
+
+.parallax {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ini style header */
+.home, .aboutme, .portfolio, .contactMenu {
+    border-radius: 5px;
+    border-bottom: 4px solid #596E79;
+}
+
+.headerMenu a:hover {
+    border-bottom: 5px solid #596E79;
+}
+
+.first {
+    background-image: url('./img/bg1.jpg');
+}
+
+.iran, .aboutTitle {
+    font-weight: 700;
+    display: inline-block;
+}
+
+.second {
+    background-image: url('./img/bg2.jpg');
+}
+
+.third {
+    background-image: url('./img/bg3.jpg');
+}
+
+.projek img {
+    width: 12vw;
+    height: 12vw;
+}
+
+.last {
+    background-image: url('./img/bg4.jpg');
+}
+
+.lastMain {
+    height: 100vh;
+    width: 100%;
+}
+
+.contactme {
+    font-weight: 700;
+    font-size: 8vw;
+    background-color: #596E79;
+    border-radius: 2vw;
+    box-shadow: 3px 3px 3px 3px #FFB200;
+}
+
+.sosmed {
+    border-radius: 2vw;
+    background-color: #596E79;
+    box-shadow: 3px 3px 3px 3px #FFB200;
+}
+
+footer img {
+    width: 2vw;
+}
+
+.footerHome {
+    margin-top: 10vw;
+   
+}
+
+.footerAbout {
+    margin-top: 5vw;
+}
+
+.footerHome, .footerAbout {
+    background-color: #596E79;
+    height: 5vw;
+    align-items: center;
+    font-weight: 700;
+}
