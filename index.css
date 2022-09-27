@@ -18,20 +18,24 @@
 }
 
 /* ini style header */
-.home, .aboutme, .portfolio, .contactMenu {
-    border-radius: 5px;
+/* .home, .aboutme, .portfolio, .contactMenu {
     border-bottom: 4px solid #596E79;
+} */
+.title {
+    width: 100%;
+    height: 100vh;
 }
 
 .headerMenu a:hover {
-    border-bottom: 5px solid #596E79;
+    border-radius: 15px;
+    border-bottom: 8px solid #596E79;
 }
 
 .first {
     background-image: url('./img/bg1.jpg');
 }
 
-.iran, .aboutTitle {
+.iran, .aboutTitle, .myportfolio {
     font-weight: 700;
     display: inline-block;
 }
@@ -72,7 +76,12 @@
     box-shadow: 3px 3px 3px 3px #FFB200;
 }
 
-footer img {
+.footer {
+    background-color: #596E79;
+    margin-top: 3vw;
+}
+
+/* footer img {
     width: 2vw;
 }
 
@@ -90,4 +99,4 @@ footer img {
     height: 5vw;
     align-items: center;
     font-weight: 700;
-}
+} */

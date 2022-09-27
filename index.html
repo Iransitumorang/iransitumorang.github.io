@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="index.css">
     <title>Iran Situmorang - Portfolio</title>
 </head>
 
 <body>
     <div class="parallax first">
         <header class="navbar">
-            <div class="container-fluid d-flex justify-content-evenly">
+            <div class="container-fluid d-flex justify-content-evenly fixed-top">
                 <a class="navbar-brand" href="#">
                     <img src="./img/Iran Situmorang-1.png" alt="Iran Situmorang" class="w-25">
                 </a>
@@ -55,7 +55,7 @@
             <img src="./img/iran.png" alt="">
         </article>
 
-        <footer class="d-flex justify-content-evenly footerHome">
+        <!-- <footer class="d-flex justify-content-evenly footerHome">
             <div>
                 <span>&copy; 2022, Iran Situmorang</span>
             </div>
@@ -81,11 +81,11 @@
                     <img src="./img/github.png" alt="github">
                 </a>
             </div>
-        </footer>
+        </footer> -->
     </div>
 
     <div class="parallax second" id="second">
-        <header class="navbar">
+        <!-- <header class="navbar">
             <div class="container-fluid d-flex justify-content-evenly">
                 <a class="navbar-brand" href="#">
                     <img src="./img/Iran Situmorang-1.png" alt="Iran Situmorang" class="w-25">
@@ -105,9 +105,9 @@
                     </a>
                 </div>
             </div>
-        </header>
+        </header> -->
 
-        <article class="about d-flex flex-column justify-content-center align-items-center">
+        <article class="about d-flex flex-column justify-content-center align-items-center title">
             <h1 class="aboutTitle">About Me</h1>
             <b class="text-center mb-3">Pernah mengikuti bootcamp dan membuat aplikasi Ewallet web dan Mobile. <br>
                 Menggunakan Html, CSS, Tailwind/Bootstrap, Javascript, React Js, Next Js dan React Native.</b>
@@ -115,8 +115,8 @@
                 <div>
                     <b class="mb-3 d-inline-block">Education</b>
                     <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div class="accordion-item bg-warning">
-                            <h2 class="accordion-header" id="flush-headingOne bg-warning">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
                                 <button class="accordion-button collapsed bg-warning" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
@@ -209,7 +209,7 @@
     </div>
 
     <div class="parallax third" id="third">
-        <header class="navbar">
+        <!-- <header class="navbar">
             <div class="container-fluid d-flex justify-content-evenly">
                 <a class="navbar-brand" href="#">
                     <img src="./img/Iran Situmorang-1.png" alt="Iran Situmorang" class="w-25">
@@ -229,10 +229,10 @@
                     </a>
                 </div>
             </div>
-        </header>
+        </header> -->
 
-        <article class="d-flex justify-content-center flex-column text-center">
-            <h1>MyPortfolio</h1>
+        <article class="d-flex justify-content-center align-items-center flex-column text-center title">
+            <h1 class="myportfolio">MyPortfolio</h1>
             <b>Membuat e-wallet, e-commerce dan mencloning beberapa projek menggunakan HTML, CSS, Bootstrap, Javascript,
                 React Js, React Native.</b>
             <small>Semua code sudah di update ke Github</small>
@@ -252,7 +252,7 @@
     </div>
 
     <div class="parallax last" id="last">
-        <header class="navbar bg-warning">
+        <!-- <header class="navbar bg-warning">
             <div class="container-fluid d-flex justify-content-evenly">
                 <a class="navbar-brand" href="#">
                     <img src="./img/Iran Situmorang-1.png" alt="Iran Situmorang" class="w-25">
@@ -272,12 +272,12 @@
                     </a>
                 </div>
             </div>
-        </header>
+        </header> -->
 
         <article class="d-flex flex-column justify-content-center align-items-center lastMain">
             <div class="contactme mb-3 px-3">Get In Touch</div>
             <div class="p-5 sosmed">
-                <div class="gap-5 d-flex">
+                <div class="gap-5 d-flex justify-content-center">
                     <div>
                         <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPxMMtMPVhlRwHSXtbwcTWzGdrnjxtffdlQjKTHGSBMWNxzLkCbQCGSzMqHnbzQxQBnwXz"
                             target="_blank">
@@ -295,7 +295,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="gap-5 d-flex mt-3">
+                <div class="gap-5 d-flex mt-3 justify-content-center">
                     <div>
                         <a href="https://www.instagram.com/iransitumorang_/" target="_blank">
                             <img src="./img/ig.png" alt="instagram">
@@ -312,8 +312,12 @@
                         </a>
                     </div>
                 </div>
+                <div class="footer">
+                    <span>&copy; 2022, Iran Situmorang. All Rights Reserved.</span>
+                </div>
             </div>
         </article>
+
     </div>
 
     <script src="./bootstrap/js/bootstrap.js"></script>
