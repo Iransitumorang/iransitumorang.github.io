@@ -76,27 +76,17 @@
     box-shadow: 3px 3px 3px 3px #FFB200;
 }
 
+.sosmed img, .logo {
+    transition-duration: 1s;
+    transition-property: transform;
+}
+
+.sosmed img:hover, .logo:hover {
+    transform: scale(1.5);
+}
+
 .footer {
     background-color: #596E79;
     margin-top: 3vw;
 }
 
-/* footer img {
-    width: 2vw;
-}
-
-.footerHome {
-    margin-top: 10vw;
-   
-}
-
-.footerAbout {
-    margin-top: 5vw;
-}
-
-.footerHome, .footerAbout {
-    background-color: #596E79;
-    height: 5vw;
-    align-items: center;
-    font-weight: 700;
-} */
