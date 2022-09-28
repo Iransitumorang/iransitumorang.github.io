@@ -18,9 +18,6 @@
 }
 
 /* ini style header */
-/* .home, .aboutme, .portfolio, .contactMenu {
-    border-bottom: 4px solid #596E79;
-} */
 .title {
     width: 100%;
     height: 100vh;
@@ -31,31 +28,48 @@
     border-bottom: 8px solid #596E79;
 }
 
-.first {
+.first, .third {
     background-image: url('./img/bg1.jpg');
 }
 
 .iran, .aboutTitle, .myportfolio {
     font-weight: 700;
     display: inline-block;
+    color: #596E79 !important;
 }
 
-.second {
+.second, .last {
     background-image: url('./img/bg4.jpg');
 }
 
-.third {
+/* .third {
     background-image: url('./img/bg1.jpg');
+} */
+
+.headerMenu b {
+    color: #596E79 !important;
+    border: 2px solid #FFB200;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .projek img {
     width: 12vw;
     height: 12vw;
+    border: 5px solid #596E79;
+    box-shadow: 3px 3px whitesmoke;
+    border-radius: 10px;
+    transition-duration: 1s;
+    transition-property: transform;
 }
 
-.last {
-    background-image: url('./img/bg4.jpg');
+.projek img:hover {
+    transform: scale(1.5);
 }
+
+/* .last {
+    background-image: url('./img/bg4.jpg');
+} */
 
 .lastMain {
     height: 100vh;
