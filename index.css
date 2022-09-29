@@ -90,12 +90,12 @@
     box-shadow: 3px 3px 3px 3px #FFB200;
 }
 
-.sosmed img, .logo {
+.sosmed img, .logo, .text:hover {
     transition-duration: 1s;
     transition-property: transform;
 }
 
-.sosmed img:hover, .logo:hover {
+.sosmed img:hover, .logo:hover, .text:hover {
     transform: scale(1.5);
 }
 
@@ -104,3 +104,43 @@
     margin-top: 3vw;
 }
 
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 10px;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #FFB200;
+    color: white;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+  }
