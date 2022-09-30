@@ -180,6 +180,19 @@
         align-items: center !important;
     }
 
+    .hamberger .navbar-brand {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btnHbg {
+        margin-top: -8vw;
+    }
+
+    .btnHbg i {
+        font-size: 5vw;
+    }
+
     .linkHbg a {
         display: block;
         text-align: center;
