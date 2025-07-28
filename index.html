@@ -12,320 +12,357 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
-    <!-- MDB -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Iran Situmorang - Portfolio</title>
 </head>
 
 <body>
-    <div class="parallax first">
-        <header class="navbar">
-            <div class="container-fluid d-md-flex d-sm-flex d-none justify-content-evenly fixed-top col-md-12 col-12">
-                <a class="navbar-brand col-md-5 col-sm-12 d-sm-flex justify-content-sm-center" href="#">
-                    <img src="./img/Iran Situmorang-1.png" alt="Iran Situmorang" class="w-25 logo">
-                </a>
-                <div class="headerMenu col-md-6 col-sm-12 d-sm-flex justify-content-sm-center">
-                    <a class="navbar-brand home" href="#">
-                        <b>Home</b>
-                    </a>
-                    <a class="navbar-brand" href="#second">
-                        <b>About Me</b>
-                    </a>
-                    <a class="navbar-brand" href="#third">
-                        <b>Portfolio</b>
-                    </a>
-                    <a class="navbar-brand" href="#last">
-                        <b>Contact</b>
-                    </a>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./img/Iran Situmorang-1.png" alt="Iran Situmorang" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
-            <div class="d-md-none d-sm-none d-block hamberger fixed-top">
-                <nav class="navbar navbar-light d-flex justify-content-center align-items-center px-5">
-                    <div class="container-fluid hambIcon">
-                        <a class="navbar-brand" href="#">
-                            <img src="./img/Iran Situmorang-1.png" alt="Iran Situmorang" class="w-25 logo">
-                        </a>
-                        <button class="navbar-toggler ms-auto btnHbg" type="button" data-mdb-toggle="collapse"
-                            data-mdb-target="#navbarToggleExternalContent3" aria-controls="navbarToggleExternalContent3"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                    </div>
-                </nav>
-                <div class="collapse" id="navbarToggleExternalContent3">
-                    <div class="shadow-3 p-4 linkHbg">
-                        <a class="navbar-brand home" href="#">
-                            <b class="">Home</b>
-                        </a>
-                        <a class="navbar-brand" href="#second">
-                            <b>About Me</b>
-                        </a>
-                        <a class="navbar-brand" href="#third">
-                            <b>Portfolio</b>
-                        </a>
-                        <a class="navbar-brand" href="#last">
-                            <b>Contact</b>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
+        </div>
+    </nav>
 
-        <article
-            class="d-flex justify-content-center align-items-center flex-md-row flex-sm-column-reverse flex-column-reverse title gap-5 my-5 ">
-            <div class="text-center">
-                <h1 class="iran">Hi, I'm Iran Situmorang</h1> <br>
-                <b>Front End Developer - PLN Icon Plus</b>
-                <div class="mt-4 d-flex justify-content-center">
-                    <div>
-                        <a href="https://www.linkedin.com/in/iran-situmorang/" class="me-3">
-                            <button type="button" class="btn btn-primary">Linked In</button>
-                        </a>
+    <!-- Hero Section -->
+    <section id="home" class="parallax-section hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            <span class="gradient-text">Hi, I'm Iran Situmorang</span>
+                        </h1>
+                        <p class="hero-subtitle">Front End Developer at PLN Icon Plus</p>
+                        <p class="hero-description">
+                            Crafting beautiful and functional web experiences with modern technologies
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="https://www.linkedin.com/in/iran-situmorang/" class="btn btn-primary btn-lg me-3">
+                                <i class="fab fa-linkedin me-2"></i>LinkedIn
+                            </a>
+                            <a href="https://github.com/Iransitumorang" class="btn btn-outline-light btn-lg">
+                                <i class="fab fa-github me-2"></i>GitHub
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="https://github.com/Iransitumorang">
-                            <button type="button" class="btn btn-dark">Github</button>
-                        </a>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="hero-image-container">
+                        <img src="./img/iran.png" alt="Iran Situmorang" class="hero-image">
+                        <div class="floating-elements">
+                            <div class="floating-element" style="--delay: 0s"></div>
+                            <div class="floating-element" style="--delay: 1s"></div>
+                            <div class="floating-element" style="--delay: 2s"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <img src="./img/iran.png" alt="profile" class="profilIran w-25">
-        </article>
-    </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
 
-    <div class="parallax second" id="second">
-        <article class="about d-flex flex-column justify-content-center align-items-center title">
-            <h1 class="aboutTitle">About Me</h1>
-            <b class="text-center mb-3 descAbout">Pernah mengikuti bootcamp dan membuat aplikasi Ewallet web dan Mobile.
-                <br>
-                Menggunakan Html, CSS, Tailwind/Bootstrap, Javascript, React Js, Next Js dan React Native.</b>
-            <div class="d-flex flex-md-row flex-sm-column flex-column gap-5">
-                <div>
-                    <div class="accordion accordion-flush" id="accordionFlushExample">
-                        <div>
-                            <b class="mb-3 d-inline-block">Education</b>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingOne">
-                                    <button class="accordion-button collapsed bg-warning" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                        aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <b>Sarjana Ekonomi</b>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body  d-flex flex-column bg-warning">
-                                        <span>Universitas Pamulang</span>
-                                        <small>2013 - 2017</small>
-                                        <small>GPA 3.40 </small>
-                                    </div>
+    <!-- About Section -->
+    <section id="about" class="parallax-section about-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">
+                        Passionate developer with experience in creating modern web applications
+                    </p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about-content">
+                        <p class="about-description">
+                            Experienced in bootcamp training and developing e-wallet and e-commerce applications. 
+                            Proficient in HTML, CSS, Tailwind/Bootstrap, JavaScript, React.js, Next.js, and React Native.
+                        </p>
+                        <div class="skills-container">
+                            <h4 class="skills-title">Technical Skills</h4>
+                            <div class="skills-grid">
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="100">
+                                    <i class="fab fa-html5"></i>
+                                    <span>HTML5</span>
                                 </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-headingTwo">
-                                    <button class="accordion-button collapsed bg-warning" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                        aria-expanded="false" aria-controls="flush-collapseTwo">
-                                        <b>SMAN1 Bandar Khalifah</b>
-                                    </button>
-                                </h2>
-                                <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                    <div class="accordion-body d-flex flex-column bg-warning">
-                                        <span>Ilmu Pengetahuan Alam</span>
-                                        <small>2010 - 2013</small>
-                                    </div>
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="200">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="300">
+                                    <i class="fab fa-js-square"></i>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="400">
+                                    <i class="fab fa-react"></i>
+                                    <span>React.js</span>
+                                </div>
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="500">
+                                    <i class="fab fa-vuejs"></i>
+                                    <span>Vue.js</span>
+                                </div>
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">
+                                    <i class="fab fa-bootstrap"></i>
+                                    <span>Bootstrap</span>
+                                </div>
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="700">
+                                    <i class="fab fa-java"></i>
+                                    <span>Java</span>
+                                </div>
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="800">
+                                    <i class="fas fa-database"></i>
+                                    <span>PostgreSQL</span>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <b class="my-3 d-inline-block">Experience</b>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingThree">
-                                        <button class="accordion-button collapsed bg-warning" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                            aria-expanded="false" aria-controls="flush-collapseThree">
-                                            <b>Frontend Developer</b>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body d-flex flex-column bg-warning">
-                                            <span>PT. PLN Icon Plus</span>
-                                            <small>Oct 2022 - Sekarang</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="flush-headingFour">
-                                        <button class="accordion-button collapsed bg-warning" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
-                                            aria-expanded="false" aria-controls="flush-collapseFour">
-                                            <b>Operation Head</b>
-                                        </button>
-                                    </h2>
-                                    <div id="flush-collapseFour" class="accordion-collapse collapse"
-                                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body d-flex flex-column bg-warning">
-                                            <span>PT. Radana Finance Tbk</span>
-                                            <small>Apr 2018- Okt 2019</small>
-                                        </div>
-                                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                    <div class="experience-timeline">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-content">
+                                <h5>Frontend Developer</h5>
+                                <p class="company">PT. PLN Icon Plus</p>
+                                <p class="period">Oct 2022 - Present</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-content">
+                                <h5>Operation Head</h5>
+                                <p class="company">PT. Radana Finance Tbk</p>
+                                <p class="period">Apr 2018 - Oct 2019</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="timeline-content">
+                                <h5>Education</h5>
+                                <p class="company">Universitas Pamulang</p>
+                                <p class="period">Sarjana Ekonomi (2013-2017)</p>
+                                <p class="gpa">GPA: 3.40</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <b class="mb-3 d-inline-block">MySkills</b>
-                    <ul class="list-group list-group-horizontal">
-                        <li class="list-group-item bg-warning">HTML</li>
-                        <li class="list-group-item bg-warning">Javascript</li>
-                        <li class="list-group-item bg-warning">Vue Js</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-md my-2">
-                        <li class="list-group-item bg-warning">Bootstrap</li>
-                        <li class="list-group-item bg-warning">Tailwind</li>
-                        <li class="list-group-item bg-warning">React Js</li>
-                    </ul>
-                    <ul class="list-group list-group-horizontal-sm">
-                        <li class="list-group-item bg-warning">CSS-SASS</li>
-                        <li class="list-group-item bg-warning">Next Js</li>
-                        <li class="list-group-item bg-warning">Angular Js</li>
-                    </ul>
-                </div>
             </div>
-        </article>
-    </div>
+        </div>
+    </section>
 
-    <div class="parallax third" id="third">
-        <article class="d-flex justify-content-center align-items-center flex-column text-center title">
-            <h1 class="myportfolio">MyPortfolio</h1>
-            <b>Membuat e-wallet, e-commerce dan mencloning beberapa projek menggunakan HTML, CSS, Bootstrap, Javascript,
-                React Js, React Native.</b>
-            <small>Semua code sudah di update ke Github</small>
-            <div class="projek mx-auto d-flex flex-column mt-3">
-                <div class="d-flex gap-2 folio mb-3">
-                    <div class="container">
-                        <img src="./img/projek1.jpeg" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">Front End Aplikasi dompet digital, mengunakan : HTML, CSS, bootstrap,
-                                Javascript, dan React Native</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <img src="./img/projek5.jpeg" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">Clone <a href="https://kotakode.com/">kotakode</a> website, menggunakan
-                                react js. platform komunitas bagi para pegiat IT di Indonesia</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <img src="./img/projek3.jpeg" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">Front End Aplikasi dompet digital, menggunakan react js</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <img src="./img/projek4.jpeg" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">Clone <a href="https://kotakode.com/">kotakode</a> website, menggunakan
-                                react js. platform komunitas bagi para pegiat IT di Indonesia</div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <img src="./img/projek9.jpeg" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">Online shop menggunakan react js</div>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="parallax-section portfolio-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="section-title">My Portfolio</h2>
+                    <p class="section-subtitle">
+                        A collection of projects showcasing my skills in modern web development
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="./img/projek1.jpeg" alt="E-Wallet App">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5>E-Wallet Application</h5>
+                                    <p>Frontend development using HTML, CSS, Bootstrap, JavaScript, and React Native</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">React Native</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex gap-2 folio">
-                    <div class="container">
-                        <img src="./img/projek6.jpeg" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">Aplikasi game sederhana, menggunakan Javascript</div>
-                            <div></div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="./img/projek5.jpeg" alt="Kotakode Clone">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5>Kotakode Clone</h5>
+                                    <p>Platform komunitas IT menggunakan React.js</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">React.js</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <img src="./img/projek8.jpeg" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">Clone Website Pintar menggunakan HTML, CSS dan Bootstrap</div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="./img/projek3.jpeg" alt="Digital Wallet">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5>Digital Wallet</h5>
+                                    <p>Frontend aplikasi dompet digital menggunakan React.js</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">React.js</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <img src="./img/projek7.jpeg" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">Clone Alterra website menggunakan HTML, CSS dan Bootstrap</div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="./img/projek4.jpeg" alt="Kotakode Platform">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5>Kotakode Platform</h5>
+                                    <p>Clone website komunitas IT menggunakan React.js</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">React.js</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <img src="./img/projek2.jpeg" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">Front End Aplikasi dompet digital, menggunakan Next js</div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="./img/projek9.jpeg" alt="Online Shop">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5>Online Shop</h5>
+                                    <p>E-commerce platform menggunakan React.js</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">React.js</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="container">
-                        <img src="./img/projek10.jpeg" alt="Avatar" class="image">
-                        <div class="middle">
-                            <div class="text">Online shop menggunakan react js</div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <img src="./img/projek2.jpeg" alt="Next.js Wallet">
+                            <div class="portfolio-overlay">
+                                <div class="portfolio-content">
+                                    <h5>Next.js Wallet</h5>
+                                    <p>Frontend aplikasi dompet digital menggunakan Next.js</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Next.js</span>
+                                        <span class="tech-tag">React.js</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </article>
-    </div>
+        </div>
+    </section>
 
-    <div class="parallax last" id="last">
-        <article class="d-flex flex-column justify-content-center align-items-center lastMain">
-            <div class="contactme mb-3 px-3">Get In Touch</div>
-            <div class="p-5 sosmed">
-                <div class="gap-5 d-flex justify-content-center">
-                    <div>
-                        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPxMMtMPVhlRwHSXtbwcTWzGdrnjxtffdlQjKTHGSBMWNxzLkCbQCGSzMqHnbzQxQBnwXz"
-                            target="_blank">
-                            <img src="./img/gmail.png" alt="gmail">
-                        </a>
+    <!-- Contact Section -->
+    <section id="contact" class="parallax-section contact-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-12 text-center" data-aos="fade-up" data-aos-duration="800">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's connect and discuss your next project</p>
+                    <div class="contact-content">
+                        <div class="contact-info">
+                            <p class="contact-description">
+                                Ready to start a new project or just want to say hello? 
+                                Feel free to reach out through any of these platforms.
+                            </p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPxMMtMPVhlRwHSXtbwcTWzGdrnjxtffdlQjKTHGSBMWNxzLkCbQCGSzMqHnbzQxQBnwXz" 
+                               class="social-link" data-aos="zoom-in" data-aos-delay="100">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/iran-situmorang/" 
+                               class="social-link" data-aos="zoom-in" data-aos-delay="200">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/Iransitumorang" 
+                               class="social-link" data-aos="zoom-in" data-aos-delay="300">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://www.instagram.com/iransitumorang_/" 
+                               class="social-link" data-aos="zoom-in" data-aos-delay="400">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://twitter.com/IranSitumorang_" 
+                               class="social-link" data-aos="zoom-in" data-aos-delay="500">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://web.facebook.com/profile.php?id=100003680996319" 
+                               class="social-link" data-aos="zoom-in" data-aos-delay="600">
+                                <i class="fab fa-facebook"></i>
+                                <span>Facebook</span>
+                            </a>
+                        </div>
                     </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/iran-situmorang/" target="_blank">
-                            <img src="./img/linkedin.png" alt="linkedin">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://twitter.com/IranSitumorang_">
-                            <img src="./img/twitter.png" alt="twitter">
-                        </a>
-                    </div>
-                </div>
-                <div class="gap-5 d-flex mt-3 justify-content-center">
-                    <div>
-                        <a href="https://www.instagram.com/iransitumorang_/" target="_blank">
-                            <img src="./img/ig.png" alt="instagram">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://web.facebook.com/profile.php?id=100003680996319" target="_blank">
-                            <img src="./img/fb.png" alt="facebook">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/Iransitumorang" target="_blank">
-                            <img src="./img/github.png" alt="github">
-                        </a>
-                    </div>
-                </div>
-                <div class="footer">
-                    <span class="d-flex text-center">&copy; 2022, Iran Situmorang. All Rights Reserved.</span>
                 </div>
             </div>
-        </article>
-    </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="footer-text">&copy; 2024 Iran Situmorang. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./bootstrap/js/bootstrap.js"></script>
-    <!-- MDB -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 
 </html>
