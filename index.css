@@ -167,6 +167,33 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     z-index: 1000;
+    padding: 15px 0;
+}
+
+/* Ensure content doesn't get hidden behind navbar */
+.parallax-section {
+    padding-top: 80px;
+}
+
+/* Mobile specific padding adjustments */
+@media (max-width: 768px) {
+    .parallax-section {
+        padding-top: 125px;
+    }
+    
+    .hero-section {
+        padding-top: 125px;
+    }
+}
+
+@media (max-width: 576px) {
+    .parallax-section {
+        padding-top: 115px;
+    }
+    
+    .hero-section {
+        padding-top: 115px;
+    }
 }
 
 .glass-nav .navbar-brand {
@@ -216,6 +243,7 @@ body {
 .hero-content {
     position: relative;
     z-index: 2;
+    padding-top: 20px;
 }
 
 .hero-title {
@@ -256,6 +284,14 @@ body {
     color: rgba(255, 255, 255, 0.9);
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .hero-buttons .btn {
     padding: 12px 30px;
     border-radius: 50px;
@@ -265,6 +301,10 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
 .hero-buttons .btn-primary {
@@ -1158,15 +1198,123 @@ body {
         height: 32px;
         font-size: 0.85rem;
     }
+    
+    /* Mobile Hero Section Fixes */
+    .hero-section {
+        padding-top: 120px;
+        min-height: 100vh;
+    }
+    
+    .hero-content {
+        text-align: center;
+        padding: 60px 0 20px 0;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .hero-description {
+        font-size: 0.9rem;
+        margin-bottom: 2rem;
+        padding: 0 15px;
+    }
+    
+    /* Mobile Button Layout - Side by Side */
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+    
+    .hero-buttons .btn {
+        flex: 1;
+        min-width: 140px;
+        max-width: 160px;
+        padding: 12px 22px;
+        font-size: 0.9rem;
+        border-radius: 25px;
+        white-space: nowrap;
+    }
+    
+    /* Mobile Image Adjustments */
+    .hero-image-container {
+        padding: 10px;
+        margin-top: 20px;
+    }
+    
+    .hero-image {
+        width: 60%;
+        max-width: 200px;
+    }
+    
+    /* Mobile Navigation Fix */
+    .glass-nav {
+        padding: 10px 0;
+    }
+    
+    .logo-img {
+        height: 35px;
+    }
+    
+    /* Mobile Scroll Indicator */
+    .scroll-indicator {
+        bottom: 20px;
+    }
+    
+    .scroll-arrow {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media (max-width: 576px) {
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 0.8rem;
     }
     
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .hero-description {
+        font-size: 0.85rem;
+        padding: 0 15px;
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Extra Small Mobile Button Layout */
+    .hero-buttons {
+        flex-direction: row;
+        gap: 12px;
+        padding: 0 15px;
+        justify-content: center;
+    }
+    
+    .hero-buttons .btn {
+        flex: 1;
+        min-width: 130px;
+        max-width: 150px;
+        padding: 10px 18px;
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+    
+    .hero-image {
+        width: 70%;
+        max-width: 180px;
     }
     
     .skills-grid {
@@ -1178,7 +1326,7 @@ body {
     }
     
     .section-title {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     
     .whatsapp-button {
@@ -1187,6 +1335,30 @@ body {
         font-size: 22px;
         bottom: 15px;
         right: 15px;
+    }
+    
+    /* Extra Small Mobile Navigation */
+    .glass-nav {
+        padding: 8px 0;
+    }
+    
+    .logo-img {
+        height: 30px;
+    }
+    
+    /* Extra Small Mobile Content Spacing */
+    .hero-content {
+        padding: 50px 0 15px 0;
+    }
+    
+    .hero-image-container {
+        padding: 5px;
+        margin-top: 15px;
+    }
+    
+    /* Extra Small Mobile Hero Section */
+    .hero-section {
+        padding-top: 115px;
     }
 }
 
