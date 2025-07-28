@@ -8,7 +8,6 @@
     <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="index.css">
-    <script src="https://unpkg.com/vue@3"></script>
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -22,16 +21,16 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top glass-nav">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#home">
                 <img src="./img/Iran Situmorang-1.png" alt="Iran Situmorang" class="logo-img">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link active" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -49,7 +48,6 @@
 
     <!-- Hero Section -->
     <section id="home" class="parallax-section hero-section">
-        <div class="hero-overlay"></div>
         <div class="container">
             <div class="row align-items-center min-vh-100">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
@@ -59,13 +57,13 @@
                         </h1>
                         <p class="hero-subtitle">Front End Developer at PLN Icon Plus</p>
                         <p class="hero-description">
-                            Crafting beautiful and functional web experiences with modern technologies
+                            Crafting beautiful and functional web experiences with modern technologies, focusing on clean code and seamless user interaction.
                         </p>
                         <div class="hero-buttons">
-                            <a href="https://www.linkedin.com/in/iran-situmorang/" class="btn btn-primary btn-lg me-3">
+                            <a href="https://www.linkedin.com/in/iran-situmorang/" class="btn btn-primary btn-lg me-3" target="_blank" rel="noopener">
                                 <i class="fab fa-linkedin me-2"></i>LinkedIn
                             </a>
-                            <a href="https://github.com/Iransitumorang" class="btn btn-outline-light btn-lg">
+                            <a href="https://github.com/Iransitumorang" class="btn btn-outline-light btn-lg" target="_blank" rel="noopener">
                                 <i class="fab fa-github me-2"></i>GitHub
                             </a>
                         </div>
@@ -73,7 +71,7 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <div class="hero-image-container">
-                        <img src="./img/iran.png" alt="Iran Situmorang" class="hero-image">
+                        <img src="./img/irans.jpg" alt="Iran Situmorang" class="hero-image">
                         <div class="floating-elements">
                             <div class="floating-element" style="--delay: 0s"></div>
                             <div class="floating-element" style="--delay: 1s"></div>
@@ -83,7 +81,7 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
+        <div class="scroll-indicator" onclick="scrollToSection('about')" style="cursor: pointer;">
             <div class="scroll-arrow"></div>
         </div>
     </section>
@@ -92,7 +90,7 @@
     <section id="about" class="parallax-section about-section">
         <div class="container">
             <div class="row align-items-center min-vh-100">
-                <div class="col-lg-12 text-center mb-5" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-lg-12 text-center mt-5 mb-5" data-aos="fade-up" data-aos-duration="800">
                     <h2 class="section-title">About Me</h2>
                     <p class="section-subtitle">
                         Passionate developer with experience in creating modern web applications
@@ -102,7 +100,7 @@
                     <div class="about-content">
                         <p class="about-description">
                             Experienced in bootcamp training and developing e-wallet and e-commerce applications. 
-                            Proficient in HTML, CSS, Tailwind/Bootstrap, JavaScript, React.js, Next.js, and React Native.
+                            Proficient in HTML, CSS, Tailwind/Bootstrap, JavaScript, Vue Js, React.js, Angular Js, Next.js, Nuxt Js, and React Native.
                         </p>
                         <div class="skills-container">
                             <h4 class="skills-title">Technical Skills</h4>
@@ -128,14 +126,30 @@
                                     <span>Vue.js</span>
                                 </div>
                                 <div class="skill-item" data-aos="zoom-in" data-aos-delay="600">
+                                    <i class="fab fa-angular"></i>
+                                    <span>Angular.js</span>
+                                </div>
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="700">
                                     <i class="fab fa-bootstrap"></i>
                                     <span>Bootstrap</span>
                                 </div>
-                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="700">
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="750">
+                                    <i class="fab fa-css3-alt"></i>
+                                    <span>Tailwind CSS</span>
+                                </div>
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="800">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Next.js</span>
+                                </div>
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="900">
+                                    <i class="fab fa-node-js"></i>
+                                    <span>Nuxt.js</span>
+                                </div>
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="1100">
                                     <i class="fab fa-java"></i>
                                     <span>Java</span>
                                 </div>
-                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="800">
+                                <div class="skill-item" data-aos="zoom-in" data-aos-delay="1200">
                                     <i class="fas fa-database"></i>
                                     <span>PostgreSQL</span>
                                 </div>
@@ -184,108 +198,289 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="./img/projek1.jpeg" alt="E-Wallet App">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-content">
-                                    <h5>E-Wallet Application</h5>
-                                    <p>Frontend development using HTML, CSS, Bootstrap, JavaScript, and React Native</p>
-                                    <div class="tech-stack">
-                                        <span class="tech-tag">React Native</span>
-                                        <span class="tech-tag">JavaScript</span>
+            
+            <!-- Portfolio Slider -->
+            <div class="portfolio-slider-container">
+                <div class="portfolio-slider">
+                    <div class="portfolio-slide" data-aos="fade-up" data-aos-delay="100">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="./img/proyek1.png" alt="Ran Dev Portfolio">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-content">
+                                        <h5>Ran Dev Portfolio</h5>
+                                        <p>Personal portfolio website dengan desain modern dan responsive</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-tag">HTML</span>
+                                            <span class="tech-tag">CSS</span>
+                                            <span class="tech-tag">JavaScript</span>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h5>Ran Dev Portfolio</h5>
+                                <p>Personal portfolio website dengan desain modern dan responsive menggunakan HTML, CSS, dan JavaScript. Website ini menampilkan skill dan project yang telah dikembangkan.</p>
+                                <div class="tech-stack-info">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <button class="visit-btn" onclick="window.open('https://ran-dev.vercel.app/home.html', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Visit Web
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-slide" data-aos="fade-up" data-aos-delay="200">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="./img/proyek2.png" alt="Siswa Amber">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-content">
+                                        <h5>Siswa Amber</h5>
+                                        <p>Platform pembelajaran online untuk siswa dengan fitur interaktif</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-tag">React.js</span>
+                                            <span class="tech-tag">Tailwind CSS</span>
+                                            <span class="tech-tag">JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h5>Siswa Amber</h5>
+                                <p>Platform pembelajaran online yang dirancang khusus untuk siswa dengan interface yang user-friendly. Fitur utama meliputi sistem manajemen data siswa, pencarian, dan sorting yang responsif.</p>
+                                <div class="tech-stack-info">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Tailwind CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <button class="visit-btn" onclick="window.open('https://siswa-amber.vercel.app/', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Visit Web
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-slide" data-aos="fade-up" data-aos-delay="300">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="./img/proyek3.png" alt="Bona Goods">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-content">
+                                        <h5>Bona Goods</h5>
+                                        <p>E-commerce platform untuk toko online dengan sistem keranjang belanja</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-tag">React.js</span>
+                                            <span class="tech-tag">Bootstrap</span>
+                                            <span class="tech-tag">JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h5>Bona Goods</h5>
+                                <p>Platform e-commerce lengkap dengan fitur keranjang belanja, katalog produk, dan sistem pembayaran. Desain responsif menggunakan Bootstrap untuk tampilan yang optimal di berbagai device.</p>
+                                <div class="tech-stack-info">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">Bootstrap</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <button class="visit-btn" onclick="window.open('https://bonagoods.vercel.app/', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Visit Web
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-slide" data-aos="fade-up" data-aos-delay="400">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="./img/proyek4.png" alt="Morang Taste">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-content">
+                                        <h5>Morang Taste</h5>
+                                        <p>Website restoran dengan menu digital dan sistem pemesanan online</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-tag">React.js</span>
+                                            <span class="tech-tag">CSS3</span>
+                                            <span class="tech-tag">JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h5>Morang Taste</h5>
+                                <p>Website restoran modern dengan menu digital yang interaktif. Fitur utama meliputi katalog menu, sistem pemesanan online, dan desain yang menarik untuk meningkatkan pengalaman pelanggan.</p>
+                                <div class="tech-stack-info">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <button class="visit-btn" onclick="window.open('https://morang-taste.vercel.app/', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Visit Web
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-slide" data-aos="fade-up" data-aos-delay="500">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="./img/proyek5.png" alt="Learning Class">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-content">
+                                        <h5>Learning Class</h5>
+                                        <p>Aplikasi game mission dengan interface yang menarik dan interaktif</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-tag">React.js</span>
+                                            <span class="tech-tag">CSS3</span>
+                                            <span class="tech-tag">JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h5>Learning Class</h5>
+                                <p>Game mission interaktif dengan tujuh level tantangan yang berbeda. Fitur meliputi sistem scoring, animasi yang menarik, dan gameplay yang engaging untuk memberikan pengalaman gaming yang menyenangkan.</p>
+                                <div class="tech-stack-info">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <button class="visit-btn" onclick="window.open('https://missionseven.vercel.app/', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Visit Web
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-slide" data-aos="fade-up" data-aos-delay="600">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="./img/proyek6.png" alt="To Do List App">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-content">
+                                        <h5>To Do List App</h5>
+                                        <p>Game mission dengan level system dan scoring yang kompleks</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-tag">React.js</span>
+                                            <span class="tech-tag">CSS3</span>
+                                            <span class="tech-tag">JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h5>To Do List App</h5>
+                                <p>Game mission dengan empat level yang semakin menantang. Sistem scoring yang kompleks dan animasi yang smooth memberikan pengalaman gaming yang immersive dengan tingkat kesulitan yang bertahap.</p>
+                                <div class="tech-stack-info">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <button class="visit-btn" onclick="window.open('https://missionfour-gxn6.vercel.app/', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Visit Web
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-slide" data-aos="fade-up" data-aos-delay="700">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="./img/proyek7.png" alt="Tic Tac Toe">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-content">
+                                        <h5>Tic Tac Toe Game</h5>
+                                        <p>Game tic tac toe klasik dengan AI opponent dan scoring system</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-tag">React.js</span>
+                                            <span class="tech-tag">CSS3</span>
+                                            <span class="tech-tag">JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h5>Tic Tac Toe Game</h5>
+                                <p>Game tic tac toe klasik yang dimodernisasi dengan AI opponent yang cerdas. Fitur meliputi sistem scoring, animasi yang menarik, dan gameplay yang intuitif untuk semua usia.</p>
+                                <div class="tech-stack-info">
+                                    <span class="tech-tag">React.js</span>
+                                    <span class="tech-tag">CSS3</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <button class="visit-btn" onclick="window.open('https://tiktaktoe-lemon.vercel.app/', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Visit Web
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-slide" data-aos="fade-up" data-aos-delay="800">
+                        <div class="portfolio-card">
+                            <div class="portfolio-image">
+                                <img src="./img/proyek8.png" alt="Employee Management">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-content">
+                                        <h5>Employee Management</h5>
+                                        <p>Sistem manajemen karyawan dengan CRUD operations dan dashboard admin</p>
+                                        <div class="tech-stack">
+                                            <span class="tech-tag">Angular 17</span>
+                                            <span class="tech-tag">SCSS</span>
+                                            <span class="tech-tag">TypeScript</span>
+                                            <span class="tech-tag">JavaScript</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="portfolio-info">
+                                <h5>Employee Management</h5>
+                                <p>Sistem manajemen karyawan yang komprehensif dengan fitur CRUD (Create, Read, Update, Delete). Dashboard admin yang user-friendly dengan interface yang responsif menggunakan Bootstrap untuk kemudahan penggunaan.</p>
+                                <div class="tech-stack-info">
+                                    <span class="tech-tag">Angular 17</span>
+                                    <span class="tech-tag">SCSS</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                </div>
+                                <button class="visit-btn" onclick="window.open('https://employee-management-app-pj2a.vercel.app/employee', '_blank')">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Visit Web
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="./img/projek5.jpeg" alt="Kotakode Clone">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-content">
-                                    <h5>Kotakode Clone</h5>
-                                    <p>Platform komunitas IT menggunakan React.js</p>
-                                    <div class="tech-stack">
-                                        <span class="tech-tag">React.js</span>
-                                        <span class="tech-tag">JavaScript</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
+                <!-- Slider Navigation -->
+                <div class="slider-nav">
+                    <button class="slider-btn prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-btn next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="./img/projek3.jpeg" alt="Digital Wallet">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-content">
-                                    <h5>Digital Wallet</h5>
-                                    <p>Frontend aplikasi dompet digital menggunakan React.js</p>
-                                    <div class="tech-stack">
-                                        <span class="tech-tag">React.js</span>
-                                        <span class="tech-tag">JavaScript</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="./img/projek4.jpeg" alt="Kotakode Platform">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-content">
-                                    <h5>Kotakode Platform</h5>
-                                    <p>Clone website komunitas IT menggunakan React.js</p>
-                                    <div class="tech-stack">
-                                        <span class="tech-tag">React.js</span>
-                                        <span class="tech-tag">JavaScript</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="./img/projek9.jpeg" alt="Online Shop">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-content">
-                                    <h5>Online Shop</h5>
-                                    <p>E-commerce platform menggunakan React.js</p>
-                                    <div class="tech-stack">
-                                        <span class="tech-tag">React.js</span>
-                                        <span class="tech-tag">JavaScript</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
-                    <div class="portfolio-item">
-                        <div class="portfolio-image">
-                            <img src="./img/projek2.jpeg" alt="Next.js Wallet">
-                            <div class="portfolio-overlay">
-                                <div class="portfolio-content">
-                                    <h5>Next.js Wallet</h5>
-                                    <p>Frontend aplikasi dompet digital menggunakan Next.js</p>
-                                    <div class="tech-stack">
-                                        <span class="tech-tag">Next.js</span>
-                                        <span class="tech-tag">React.js</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                
+                <!-- Slider Dots -->
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
         </div>
@@ -307,34 +502,34 @@
                         </div>
                         <div class="social-links">
                             <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPxMMtMPVhlRwHSXtbwcTWzGdrnjxtffdlQjKTHGSBMWNxzLkCbQCGSzMqHnbzQxQBnwXz" 
-                               class="social-link" data-aos="zoom-in" data-aos-delay="100">
+                               class="social-link" data-aos="zoom-in" data-aos-delay="100" target="_blank" rel="noopener">
                                 <i class="fas fa-envelope"></i>
                                 <span>Email</span>
                             </a>
                             <a href="https://www.linkedin.com/in/iran-situmorang/" 
-                               class="social-link" data-aos="zoom-in" data-aos-delay="200">
+                               class="social-link" data-aos="zoom-in" data-aos-delay="200" target="_blank" rel="noopener">
                                 <i class="fab fa-linkedin"></i>
                                 <span>LinkedIn</span>
                             </a>
                             <a href="https://github.com/Iransitumorang" 
-                               class="social-link" data-aos="zoom-in" data-aos-delay="300">
+                               class="social-link" data-aos="zoom-in" data-aos-delay="300" target="_blank" rel="noopener">
                                 <i class="fab fa-github"></i>
                                 <span>GitHub</span>
                             </a>
                             <a href="https://www.instagram.com/iransitumorang_/" 
-                               class="social-link" data-aos="zoom-in" data-aos-delay="400">
+                               class="social-link" data-aos="zoom-in" data-aos-delay="400" target="_blank" rel="noopener">
                                 <i class="fab fa-instagram"></i>
                                 <span>Instagram</span>
                             </a>
-                            <a href="https://twitter.com/IranSitumorang_" 
-                               class="social-link" data-aos="zoom-in" data-aos-delay="500">
-                                <i class="fab fa-twitter"></i>
-                                <span>Twitter</span>
-                            </a>
                             <a href="https://web.facebook.com/profile.php?id=100003680996319" 
-                               class="social-link" data-aos="zoom-in" data-aos-delay="600">
+                               class="social-link" data-aos="zoom-in" data-aos-delay="500" target="_blank" rel="noopener">
                                 <i class="fab fa-facebook"></i>
                                 <span>Facebook</span>
+                            </a>
+                            <a href="https://twitter.com/IranSitumorang_" 
+                               class="social-link" data-aos="zoom-in" data-aos-delay="600" target="_blank" rel="noopener">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
                             </a>
                         </div>
                     </div>
@@ -343,24 +538,247 @@
         </div>
     </section>
 
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/6282165030616" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="footer-text">&copy; 2024 Iran Situmorang. All Rights Reserved.</p>
+                    <p class="footer-text">&copy; 2025 Iran Situmorang. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="./bootstrap/js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        gsap.registerPlugin(ScrollTrigger);
+        
         AOS.init({
             duration: 1000,
             once: true,
             offset: 100
+        });
+
+        // Fixed background - no movement at all
+        document.querySelectorAll(".parallax-section").forEach((section, index) => {
+            // Only content animation, no background movement
+            if (index > 0) {
+                gsap.fromTo(section, {
+                    opacity: 0,
+                    scale: 1.05
+                }, {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 0.8,
+                    scrollTrigger: {
+                        trigger: section,
+                        start: "top 80%",
+                        end: "top 20%",
+                        scrub: false
+                    }
+                });
+            }
+        });
+
+        // Content fade-in animations
+        document.querySelectorAll(".parallax-section .hero-content, .parallax-section .about-content, .parallax-section .portfolio-content, .parallax-section .contact-content").forEach(content => {
+            gsap.fromTo(content, {
+                y: 40,
+                opacity: 0
+            }, {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: content,
+                    start: "top 80%",
+                }
+            });
+        });
+
+        // Active section management
+        document.querySelectorAll(".parallax-section").forEach((section, index) => {
+            ScrollTrigger.create({
+                trigger: section,
+                start: "top 50%",
+                end: "bottom 50%",
+                onEnter: () => {
+                    // Remove active class from all sections
+                    document.querySelectorAll(".parallax-section").forEach(s => s.classList.remove('active'));
+                    // Add active class to current section
+                    section.classList.add('active');
+                },
+                onLeave: () => {
+                    section.classList.remove('active');
+                }
+            });
+        });
+
+        // Portfolio Slider Functionality
+        let currentSlide = 1;
+        const totalSlides = 8;
+        const slider = document.querySelector('.portfolio-slider');
+        const dots = document.querySelectorAll('.dot');
+        const slides = document.querySelectorAll('.portfolio-slide');
+
+        function slidePortfolio(direction) {
+            if (direction === 'next') {
+                currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
+            } else {
+                currentSlide = currentSlide <= 1 ? totalSlides : currentSlide - 1;
+            }
+            updateSlider();
+        }
+
+        function updateSlider() {
+            // Get the actual slide width including margin
+            const slideElement = document.querySelector('.portfolio-slide');
+            const slideWidth = slideElement.offsetWidth + 16; // width + gap
+            const scrollPosition = (currentSlide - 1) * slideWidth;
+            
+            if (slider) {
+                slider.scrollTo({
+                    left: scrollPosition,
+                    behavior: 'smooth'
+                });
+            }
+
+            // Update dots
+            dots.forEach((dot, index) => {
+                dot.classList.remove('active');
+                if (index === currentSlide - 1) {
+                    dot.classList.add('active');
+                }
+            });
+        }
+
+        function goToSlide(slideNumber) {
+            currentSlide = slideNumber;
+            updateSlider();
+        }
+
+        // Auto slide every 5 seconds
+        let autoSlideInterval = setInterval(() => {
+            slidePortfolio('next');
+        }, 5000);
+
+        // Pause auto slide on hover
+        const sliderContainer = document.querySelector('.portfolio-slider-container');
+        if (sliderContainer) {
+            sliderContainer.addEventListener('mouseenter', () => {
+                clearInterval(autoSlideInterval);
+            });
+            
+            sliderContainer.addEventListener('mouseleave', () => {
+                autoSlideInterval = setInterval(() => {
+                    slidePortfolio('next');
+                }, 5000);
+            });
+        }
+
+        // Make functions global
+        window.slidePortfolio = slidePortfolio;
+        window.currentSlide = goToSlide;
+
+        // Add event listeners for navigation buttons and dots
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navigation buttons
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+            
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => slidePortfolio('prev'));
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => slidePortfolio('next'));
+            }
+
+            // Dots navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentSlide = index + 1;
+                    updateSlider();
+                });
+            });
+
+            // Initialize slider
+            updateSlider();
+        });
+
+        // Scroll function for scroll indicator
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                const offsetTop = section.offsetTop;
+                console.log('Scrolling to section:', sectionId, 'at position:', offsetTop);
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            } else {
+                console.log('Section not found:', sectionId);
+            }
+        }
+
+        // Add smooth scroll for all navigation links
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    scrollToSection(targetId);
+                });
+            });
+
+            // Scroll indicator functionality
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            if (scrollIndicator) {
+                scrollIndicator.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    scrollToSection('about');
+                });
+            }
+
+            // Update active state based on scroll position
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('section[id]');
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (pageYOffset >= sectionTop - 200) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
         });
     </script>
 </body>
